@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 50%;
+    margin-left: 150px;
+}
+
+.container-right {
+    display: inline-block;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    background-color: blueviolet;
+
+}
+
+img {
+    position: relative;
+    top: 6%;
+    right: 750px;
+    width: 1900px;
+}
+
+h1 {
+    font-size: 164px;
+    line-height: 167px;
+    color: blue;
+    margin-top: 28%;
+}
+
+p {
+    font-size: 50px;
+    line-height: 97px;
+    color: crimson;
+    font-size: 80px;
+    margin: 70px 0;
+}
+
+button {
+    font-size: 50px;
+    line-height: 25px;
+    background: aqua;
+    width: 400px;
+    height: 200px;
+    border-radius: 70px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    margin-top: 200px;
+
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .5;
+}
+
+header {
+    font-size: 65px;
+    margin-top: 68px;
+    margin-left: 175px;
+    cursor: pointer;
+}
+
+a {
+    font-size: 80px;
+    line-height: 21px;
+    cursor: pointer;
+    margin-right: 70px;
+
+}
+
+a:nth-child (2) {
+    opacity: .5;
+}
+
+a:hover {
+    opacity: .4;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-left {
+        display: block;
+        width: 93%;
+        margin-left: 150px;
+        padding: 0;
+        margin: 0;
+        height: 42%;
+    }
+
+    .container-right {
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+        background-color: rgb(226, 43, 180);
+        padding: 40px;
+        height: 45%;
+
+    }
+
+    img {
+        position: static;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 300px;
+        color: blue;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+
+    p {
+        line-height: 53px;
+        color: crimson;
+        font-size: 44px;
+        margin: 43px 63px;
+        text-align: center;
+        width: auto;
+    }
+
+    button {
+        margin: 130px auto;
+        display: block;
+        height: 100px;
+    }
+
+    header {
+        display: none;
+    }
+}
